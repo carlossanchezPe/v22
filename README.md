@@ -2,11 +2,9 @@
 
 # Por Carlos Sanchez
 
-Ficha Tecnica:
+# Ficha Tecnica:
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En lo que respecta a calidad de aire interior (IAQ), dispositivos tales como los purificadores de aire han estado disponibles para su uso en los hogares y en las oficinas desde ya hace algún tiempo. Más recientemente, han entrado en el mercado sistemas de gama alta que incorporan sensores inteligentes de monitoreo de calidad del aire. 
 
 ## Available Scripts
 
