@@ -13,3 +13,5 @@ En lo que respecta a calidad de aire interior , dispositivos tales como los puri
 
 Un sensor de polvo, el Sharp GP2Y1010 , cuantifica la presencia de partículas en el ambiente circundante utilizando un LED infrarrojo y un fototransistor. 
 
+(![image](https://github.com/carlossanchezPe/v22/assets/127566199/c6f9f2c3-b704-4410-8480-865294ab4fad)
+)
