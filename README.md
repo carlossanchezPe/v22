@@ -1,4 +1,4 @@
-# SENSOR DETECTOR DE AIRE
+# SENSOR DETECTORES DE AIRE
 
 # Por Carlos Sanchez
 
