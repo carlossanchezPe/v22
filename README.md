@@ -5,6 +5,7 @@
 # Objetivo:
 
 controlar una pantalla OLED para mostrar información visual en forma de texto, gráficos y otros elementos en una variedad de aplicaciones. 
+
 (https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2016/09/ssd1306-oled-display-arduino.jpg?w=750&quality=100&strip=all&ssl=1)
 
 # Ficha Tecnica
@@ -28,7 +29,4 @@ Capacidad Gráfica: Permite la representación de gráficos y texto en una ampli
 Un sensor de polvo, el Sharp GP2Y1010 , cuantifica la presencia de partículas en el ambiente circundante utilizando un LED infrarrojo y un fototransistor. 
 
 Es importante señalar que las especificaciones exactas pueden variar según el fabricante y el modelo específico de la pantalla OLED que utilices con el controlador SSD1306.
-
-
-
 
