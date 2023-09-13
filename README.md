@@ -29,5 +29,4 @@ Un sensor de polvo, el Sharp GP2Y1010 , cuantifica la presencia de partículas e
 
 Es importante señalar que las especificaciones exactas pueden variar según el fabricante y el modelo específico de la pantalla OLED que utilices con el controlador SSD1306.
 
-https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2016/09/ssd1306-oled-display-arduino-tutorial.jpg?resize=1024%2C576&quality=100&strip=all&ssl=1
 (https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2016/09/ssd1306-oled-display-arduino-tutorial.jpg?resize=1024%2C576&quality=100&strip=all&ssl=1)
