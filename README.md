@@ -31,4 +31,4 @@ Es importante señalar que las especificaciones exactas pueden variar según el 
 
 
 
-[https://www.engineersgarage.com/wp-content/uploads/2021/07/P15-01.png]()
+[https://www.engineersgarage.com/wp-content/uploads/2021/07/P15-01.png]( https://www.engineersgarage.com/wp-content/uploads/2021/07/P15-01.png)
