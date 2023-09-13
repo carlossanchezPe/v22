@@ -5,7 +5,7 @@
 # Objetivo:
 
 controlar una pantalla OLED para mostrar información visual en forma de texto, gráficos y otros elementos en una variedad de aplicaciones. 
-
+(https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2016/09/ssd1306-oled-display-arduino.jpg?w=750&quality=100&strip=all&ssl=1)
 
 # Ficha Tecnica
 ### Características Principales:
