@@ -30,6 +30,5 @@ Un sensor de polvo, el Sharp GP2Y1010 , cuantifica la presencia de partículas e
 Es importante señalar que las especificaciones exactas pueden variar según el fabricante y el modelo específico de la pantalla OLED que utilices con el controlador SSD1306.
 
 
-[](https://www.engineersgarage.com/wp-content/uploads/2021/07/P15-01.png
-)
+[](https://www.engineersgarage.com/wp-content/uploads/2021/07/P15-01.png)
 
