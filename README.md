@@ -1,4 +1,4 @@
-# Sensor ssd1306 oled display
+# Proxy
 
 # Por Carlos Sanchez
 
