@@ -1,32 +1,77 @@
 # Proxy
 
-# Por Carlos Sanchez
+## Por **Carlos Sánchez**
 
-# Objetivo:
+---
 
-controlar una pantalla OLED para mostrar información visual en forma de texto, gráficos y otros elementos en una variedad de aplicaciones. 
+### 🎯 **Objetivo**:
 
+Explicar el patrón de diseño **Proxy**, que proporciona un intermediario o marcador de posición para controlar el acceso a un objeto.
 
-# Ficha Tecnica
-### Características Principales:
-Resolución: El SSD1306 es compatible con pantallas OLED de diversas resoluciones, incluyendo 128x32, 128x64, 96x16, entre otras. La resolución puede variar según el modelo de la pantalla OLED en el que se utilice.
+---
 
-Interfaz: Suelen utilizar interfaces de comunicación I2C (Inter-Integrated Circuit) o SPI (Serial Peripheral Interface) para la comunicación con microcontroladores y otros dispositivos.
+### 📄 **Descripción**:
 
-Alimentación: Requiere una fuente de alimentación de bajo voltaje, generalmente 3.3V o 5V, dependiendo del modelo específico de la pantalla OLED.
+El patrón Proxy es un **patrón de diseño estructural** que permite crear un intermediario que controla el acceso a un objeto original. Este intermediario puede realizar acciones adicionales, como validaciones, control de acceso o registro de actividades, antes o después de interactuar con el objeto original.
 
-Tamaño de Pantalla: El tamaño de la pantalla puede variar según el modelo, pero es común encontrar pantallas pequeñas de 0.96 a 1.3 pulgadas para proyectos embebidos y de prototipado.
+---
+# Problema: Control de Acceso a Objetos
 
-Control de Brillo: Puede permitir el control del brillo de la pantalla OLED, lo que es útil para adaptar la visibilidad en diferentes condiciones de iluminación.
+---
 
-Compatibilidad: Es ampliamente compatible con microcontroladores populares como Arduino, Raspberry Pi y otros.
+### 🚨 **¿Por qué es importante controlar el acceso a un objeto?**
 
-Consumo de Energía: Las pantallas OLED controladas por el SSD1306 son conocidas por su eficiencia energética en comparación con otras tecnologías de pantalla.
+A veces, trabajamos con objetos que consumen **muchos recursos del sistema**. Estos objetos no siempre son necesarios, pero cuando los usamos, pueden causar **retrasos** o **problemas de rendimiento**.
 
-Capacidad Gráfica: Permite la representación de gráficos y texto en una amplia variedad de fuentes y tamaños, lo que facilita la creación de interfaces de usuario personalizadas.
+---
 
-Un sensor de polvo, el Sharp GP2Y1010 , cuantifica la presencia de partículas en el ambiente circundante utilizando un LED infrarrojo y un fototransistor. 
+### 🛑 **Ejemplo común**:
 
-Es importante señalar que las especificaciones exactas pueden variar según el fabricante y el modelo específico de la pantalla OLED que utilices con el controlador SSD1306.
+Las consultas a bases de datos pueden ser muy lentas. Sería ideal **crear el objeto solo cuando realmente lo necesitemos** para evitar usar recursos innecesarios.
 
-![image](https://github.com/carlossanchezPe/v22/assets/127566199/3840b54b-36f0-4de3-8513-e02cb08ccff1)
+---
+
+### 💡 **Solución tradicional**:
+
+Podemos implementar una **inicialización diferida**: crear el objeto solo cuando sea necesario. Sin embargo, esta solución a menudo genera **código duplicado** y complicado para todos los clientes que necesiten ese objeto.
+
+---
+
+### 🤔 **¿Por qué no es siempre ideal?**
+
+- **Limitaciones de clases externas**: A veces no podemos modificar la clase del objeto porque pertenece a una **biblioteca de terceros** que no podemos alterar.
+- **Complejidad en el manejo de código repetido**: Colocar el código de inicialización en cada cliente del objeto añade complejidad y redundancia.
+
+---
+
+### 🔍 **El patrón Proxy como solución**:
+
+El patrón Proxy resuelve este problema al controlar cuándo y cómo se crea el objeto, mejorando la eficiencia sin duplicar código.
+
+# Analogía del Patrón Proxy en el Mundo Real
+
+---
+
+### 💳 **Tarjeta de crédito como Proxy**:
+
+Imagina que utilizas una **tarjeta de crédito** para hacer un pago. Aunque puedes pagar con efectivo, la tarjeta actúa como un **proxy** de tu cuenta bancaria, que a su vez es un proxy del dinero en efectivo.
+
+---
+
+### 📌 **¿Cómo funciona?**
+
+- **Tarjeta de crédito = Proxy**: La tarjeta y el efectivo funcionan de manera similar para realizar pagos porque ambos implementan la misma "interfaz".
+- **Ventajas para el consumidor**: No es necesario llevar efectivo en grandes cantidades.
+- **Ventajas para el comerciante**: Los ingresos se transfieren de manera segura a su cuenta bancaria, reduciendo el riesgo de pérdida o robo.
+
+---
+
+### 🔄 **Beneficio mutuo**:
+
+- **Para el cliente**: Comodidad y seguridad al no llevar efectivo.
+- **Para el dueño de la tienda**: Ingresos protegidos y transferencias electrónicas seguras.
+---
+# Pseudocódigo
+![image](https://github.com/user-attachments/assets/7b9596c9-e8a5-4c65-b880-6e7937a96631)
+
+-----
