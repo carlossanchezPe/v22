@@ -74,7 +74,4 @@ Imagina que utilizas una **tarjeta de crédito** para hacer un pago. Aunque pued
 - **Para el cliente**: Comodidad y seguridad al no llevar efectivo.
 - **Para el dueño de la tienda**: Ingresos protegidos y transferencias electrónicas seguras.
 ---
-# Pseudocódigo
-![image](https://github.com/user-attachments/assets/7b9596c9-e8a5-4c65-b880-6e7937a96631)
 
------
