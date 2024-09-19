@@ -75,3 +75,22 @@ Imagina que utilizas una **tarjeta de crédito** para hacer un pago. Aunque pued
 - **Para el dueño de la tienda**: Ingresos protegidos y transferencias electrónicas seguras.
 ---
 
+
+## Pros y Contras
+
+### Pros:
+- Puedes controlar el objeto de servicio sin que los clientes lo sepan.
+- Permite gestionar el ciclo de vida del objeto de servicio sin afectar a los clientes.
+- El proxy funciona incluso si el objeto de servicio no está listo o disponible.
+- Cumple con el principio de abierto/cerrado, permitiendo introducir nuevos proxies sin modificar el servicio o los clientes.
+
+### Contras:
+- El código puede volverse más complejo al introducir una gran cantidad de nuevas clases.
+- La respuesta del servicio puede retrasarse debido a la intervención del proxy.
+## Relaciones con Otros Patrones
+
+- **Adapter** ofrece una interfaz diferente al objeto, mientras que **Proxy** le proporciona la misma interfaz y **Decorator** la mejora.
+- **Facade** y **Proxy** almacenan temporalmente una entidad compleja, pero Proxy tiene la misma interfaz que el servicio, haciéndolos intercambiables.
+- **Decorator** y **Proxy** tienen estructuras similares pero con diferentes propósitos: Proxy gestiona el ciclo de vida del servicio, mientras que los Decorators dependen del control del cliente.
+
+
